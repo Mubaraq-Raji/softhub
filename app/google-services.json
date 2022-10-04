@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "735847306749",
+    "firebase_url": "https://automation-apps-default-rtdb.firebaseio.com",
+    "project_id": "automation-apps",
+    "storage_bucket": "automation-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735847306749:android:2fbe5b30ee2029696bf594",
+        "android_client_info": {
+          "package_name": "com.harlharjj.softhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735847306749-eq2anm6bacbn59micjonk11hd0m25087.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8DvR5WXzs9sKLPSgggjTf9xbyjADWXBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735847306749-eq2anm6bacbn59micjonk11hd0m25087.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+</resources>

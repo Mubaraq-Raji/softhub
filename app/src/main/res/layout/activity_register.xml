@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blacky">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/details">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/green"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/create_new_account"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/recerver"
+            android:text="@string/provide_correct_information"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/details"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true">
+        
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_shapeType="pressed"
+            app:neumorph_shadowElevation="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:neumorph_shadowColorDark="@color/background_1"
+            app:neumorph_shadowColorLight="@color/blacky_1"
+            >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxBackgroundMode="none"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@android:color/transparent"
+            app:hintTextColor="@color/recerver"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/full_name"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+                android:textColorHint="@color/recerver"
+                android:textSize="15sp"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_shapeType="pressed"
+            app:neumorph_shadowElevation="2dp"
+            app:neumorph_shadowColorLight="@color/blacky_1"
+            app:neumorph_shadowColorDark="@color/blacky_1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="none"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/RegEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/emails"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:textColor="@android:color/white"
+                android:paddingEnd="5dp"
+                android:textColorHint="@color/recerver"
+                android:textSize="15sp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_shadowColorDark="@color/blacky_1"
+            app:neumorph_shadowColorLight="@color/blacky_1"
+            app:neumorph_shadowElevation="2dp"
+            app:neumorph_shapeType="pressed"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="none"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/mobile_no"
+                android:inputType="number"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:textColor="@android:color/white"
+                android:paddingEnd="5dp"
+                android:textColorHint="@color/recerver"
+                android:textSize="15sp"
+                tools:ignore="TextFields,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_shapeType="pressed"
+            app:neumorph_shadowElevation="2dp"
+            app:neumorph_shadowColorLight="@color/blacky_1"
+            app:neumorph_shadowColorDark="@color/blacky_1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="none"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/DeviceId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/device_id"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/recerver"
+                android:textSize="15sp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_shadowColorDark="@color/blacky_1"
+            app:neumorph_shadowColorLight="@color/blacky_1"
+            app:neumorph_shadowElevation="2dp"
+            app:neumorph_shapeType="pressed"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="none"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/RegPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/passwords"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/recerver"
+                android:textSize="15sp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_shapeType="pressed"
+            app:neumorph_shadowElevation="2dp"
+            app:neumorph_shadowColorLight="@color/blacky_1"
+            app:neumorph_shadowColorDark="@color/blacky_1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="none"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/ComfirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+                android:textColorHint="@color/recerver"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <Button
+            android:id="@+id/regButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/chat_text"
+            android:text="@string/registers"
+            android:textColor="#212121"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    </LinearLayout>
+
+</RelativeLayout>

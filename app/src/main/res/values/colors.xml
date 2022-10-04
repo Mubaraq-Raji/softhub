@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="DodgerBlue">#ff1e90ff</color>
+    <color name="RoyalBlue">#ff4169e1</color>
+    <color name="SteelBlue">#ff76bbf5</color>
+    <color name="recerver">#ffe5e9e6</color>
+    <color name="skyblue">#ff87cefa</color>
+    <color name="tint">#fff2f4f2</color>
+    <color name="neumo">#ECF0F3</color>
+    <color name="colorLightGray">#ffdbdada</color>
+    <color name="background">#52000000</color>
+    <color name="background_1">#ff404040</color>
+    <color name="blacky">#2e2e2e</color>
+    <color name="blacky_1">#3b3b3b</color>
+    <color name="green">#ff00ab03</color>
+</resources>

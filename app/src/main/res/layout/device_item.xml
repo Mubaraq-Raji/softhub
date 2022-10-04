@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeD"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        app:cardBackgroundColor="@color/background_1"
+        android:layout_height="110dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/lampImage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/lampstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lampImage"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:text="Lamps"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lampstxt"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:text="Kitchen, Bedroom"
+                android:fontFamily="@font/comfortaa"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/switchs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
+                android:paddingHorizontal="5dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+        </RelativeLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

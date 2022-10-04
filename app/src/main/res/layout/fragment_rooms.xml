@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blacky">
+
+    <ImageView
+        android:id="@+id/roomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/slide" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tempCard"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/background_1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagesRoom"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_temp" />
+
+            <TextView
+                android:id="@+id/tempValue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imagesRoom"
+                android:gravity="center"
+                android:text="TEMPERATURE"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tempValue"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:text="Inside"
+                android:textColor="@android:color/white"
+                android:id="@+id/txtInside"/>
+
+            <TextView
+                android:id="@+id/insideValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtInside"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/tempValue"
+                android:text="20⁰c"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txtInside"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:text="Outside"
+                android:textColor="@android:color/white"
+                android:id="@+id/txtOutside"/>
+
+            <TextView
+                android:id="@+id/outsideValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtOutside"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/insideValue"
+                android:text="16⁰c"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lightCard"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@id/tempCard"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/background_1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/lightImage"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_light" />
+
+            <TextView
+                android:id="@+id/lightTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/lightImage"
+                android:gravity="center"
+                android:text="LIGHT"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtlamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/_4_lamps"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtlamp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentEnd="true"
+                android:text="@string/turned_on"
+                android:layout_marginEnd="80dp"
+                android:textColor="@color/green"
+                android:textSize="12sp" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/brightCard"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@id/lightCard"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/background_1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/brightImage"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_brightness" />
+
+            <TextView
+                android:id="@+id/brightTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/brightImage"
+                android:gravity="center"
+                android:text="@string/brightness"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:text="50%"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginEnd="80dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/txtbright"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/humidCard"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@id/brightCard"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/background_1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/humidImage"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_hum" />
+
+            <TextView
+                android:id="@+id/humidTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/humidImage"
+                android:gravity="center"
+                android:text="@string/humidity"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txthum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/_70_"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

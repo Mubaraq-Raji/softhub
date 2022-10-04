@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blacky">
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Rooms"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_dashboard"
+        android:layout_marginBottom="120dp"
+        android:layout_marginTop="20dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/roomRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="7dp" />
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addRoomBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/rounded_edittext"
+        android:text="Add Room"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:ignore="TouchTargetSizeCheck" />
+</RelativeLayout>

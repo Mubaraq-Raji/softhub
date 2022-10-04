@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blacky">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/newDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_device"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/green"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/Device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of new device"
+        android:layout_below="@id/newDevice"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/recerver"/>
+
+    <EditText
+        android:id="@+id/edit_device"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/Device_name"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:cursorVisible="true"
+        android:foregroundTint="@color/green"
+        android:hint=""
+        android:paddingStart="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <include
+        layout="@layout/item_divider"
+        android:layout_below="@id/edit_device"
+        android:layout_marginTop="15dp"
+        android:layout_height="1dp"
+        android:layout_width="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/type_layout"
+        android:layout_below="@id/edit_device"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device Type"
+            android:textColor="@android:color/white"
+            />
+
+        <RadioGroup
+            android:id="@+id/type_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+
+
+            >
+
+            <RadioButton
+                android:id="@+id/M1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectedM"
+                android:text="Smart Switch"
+                android:textColor="@color/recerver"
+
+                />
+
+            <RadioButton
+                android:id="@+id/M2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectedM"
+                android:text="Smart Socket"
+                android:textColor="@color/recerver" />
+
+            <RadioButton
+                android:id="@+id/M3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectedM"
+                android:text="Sensor"
+                android:textColor="@color/recerver" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/sensor_group"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+
+            >
+            <RadioButton
+                android:id="@+id/S1"
+                android:onClick="selectedSensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motion Sensor"
+                android:textColor="@color/recerver"
+
+                />
+            <RadioButton
+                android:onClick="selectedSensor"
+                android:id="@+id/S2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature Sensor"
+                android:textColor="@color/recerver"/>
+
+            <RadioButton
+                android:onClick="selectedSensor"
+                android:id="@+id/S3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/recerver"
+                android:text="Humidity Sensor"/>
+            <RadioButton
+                android:onClick="selectedSensor"
+                android:id="@+id/S4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/recerver"
+                android:text="Light Intensity Sensor"/>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/switch_group"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+
+            >
+            <RadioButton
+                android:id="@+id/SS1"
+                android:onClick="selectedSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Gang"
+                android:textColor="@color/recerver"
+
+                />
+            <RadioButton
+                android:onClick="selectedSwitch"
+                android:id="@+id/SS2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Gang"
+                android:textColor="@color/recerver"/>
+
+            <RadioButton
+                android:onClick="selectedSwitch"
+                android:id="@+id/SS3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/recerver"
+                android:text="3 Gang"/>
+            <RadioButton
+                android:onClick="selectedSwitch"
+                android:id="@+id/SS4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/recerver"
+                android:text="4 Gang"/>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/socket_group"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+
+            >
+            <RadioButton
+                android:id="@+id/Sock1"
+                android:onClick="selectedSocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Amps"
+                android:textColor="@color/recerver"
+
+                />
+            <RadioButton
+                android:onClick="selectedSocket"
+                android:id="@+id/Sock2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 Amps"
+                android:textColor="@color/recerver"/>
+
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_divider"
+        android:layout_below="@id/type_layout"
+        android:layout_marginTop="15dp"
+        android:layout_height="1dp"
+        android:layout_width="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/location_layout"
+        android:layout_below="@id/type_layout"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location of device "
+            android:textColor="@color/recerver"
+
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/location_group_1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <RadioButton
+                android:id="@+id/R1"
+                android:onClick="selectedRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Living Room"
+                android:textColor="@color/recerver"
+                />
+            <RadioButton
+                android:onClick="selectedRoom"
+                android:id="@+id/R2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BedRoom"
+                android:textColor="@color/recerver"
+              />
+            <RadioButton
+                android:onClick="selectedRoom"
+                android:id="@+id/R3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guest Room"
+                android:textColor="@color/recerver"
+               />
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/location_group_2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <RadioButton
+                android:id="@+id/R5"
+                android:onClick="selectedRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Children Room"
+                android:textColor="@color/recerver"
+                />
+            <RadioButton
+                android:onClick="selectedRoom"
+                android:id="@+id/R6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dining Room"
+                android:textColor="@color/recerver"
+                />
+            <RadioButton
+                android:onClick="selectedRoom"
+                android:id="@+id/R7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kitchen"
+                android:textColor="@color/recerver"
+                />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/location_group_3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <RadioButton
+                android:onClick="selectedRoom"
+                android:id="@+id/R4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toilet"
+                android:textColor="@color/recerver"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_divider"
+        android:layout_below="@id/location_layout"
+        android:layout_marginTop="15dp"
+        android:layout_height="1dp"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/addNewDevice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/location_layout"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/chat_text"
+        android:text="Add Device"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</RelativeLayout>
+</ScrollView>
